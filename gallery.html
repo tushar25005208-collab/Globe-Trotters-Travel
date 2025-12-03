@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - Gallery</title>
+    <style>
+        /* Shared Styles */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px 0; }
+        /* Gallery Styles */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 50px; justify-content: center;}
+        .gallery-item { background: white; border-radius: 20px; overflow: hidden;box-shadow: 0 4px 8px rgba(0,0,0,0.2); text-align: center; justify-content:center; }
+        .gallery-item img { width: 100%; height:200px; object-fit: cover; justify-content: center;}
+        .gallery-item p { padding: 10px; margin: 0; font-weight: bold; font-size: xx-large; justify-content: center;}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Globe Trotters Travel</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bookings.html">Book Now</a>
+            <a href="tips.html">Travel Tips</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>🖼️ Destination Photo Gallery</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="bali.webp" alt="Bali">
+                 <img src="bali2.webp" alt="Bali">
+                <p>Bali, Indonesia</p>
+             </div>
+             <div class="gallery-item">
+                
+
+              <img src="tokyo.jpg" alt="Tokyo">
+              <img src="tokyo2.jpg" alt="Tokyo">  
+                <p>Tokyo, Japan</p>
+             </div>
+             <div class="gallery-item">
+                
+
+             <img src="machupichu2.jpg" alt="Machu Picchu">
+             <img src="machupicchu.jpg" alt="Machu Picchu">
+                <p>Machu Picchu, Peru</p>
+             </div>
+             <div class="gallery-item">
+                 <img src="serengeti.jpg" alt="Serengeti">
+                 <img src="serengeti2.jpg" alt="Serengeti">
+                 <p>Serengeti, Tanzania</p>
+             </div>
+             <div class="gallery-item">
+                 <img src="paris.webp" alt="Paris">
+                 <img src="paris2.jpg" alt="Paris">
+                 <p>Paris, France</p>
+             </div>
+         </div>
+     </div>
+
+</body>
+</html>

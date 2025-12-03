@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - Home</title>
+    <style>
+        /* General Styles */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px 0; }
+        /* Packages Styles */
+        .package { background: white; margin-bottom: 20px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .package h3 { color: #007bff; }
+        .package button { background-color: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Globe Trotters Travel</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bookings.html">Book Now</a>
+            <a href="tips.html">Travel Tips</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>🔥 Featured Tour Packages</h2>
+
+        <div class="package">
+            <h3>Bali Beaches & Temples (5 Days)</h3>
+            <p>Explore the spiritual side and stunning coastlines of Bali.</p>
+            <p>Price: ₹180000</p>
+            <button onclick="bookAlert('Bali')">Book This Tour</button>
+        </div>
+
+        <div class="package"><h3>Tokyo City Lights (7 Days)</h3><p>A dazzling journey through the heart of modern Japan.</p><p>Price: ₹280000</p><button onclick="bookAlert('Tokyo')">Book This Tour</button></div>
+        <div class="package"><h3>Machu Picchu Trek (4 Days)</h3><p>Hike the Inca trail to the lost city in the clouds.</p><p>Price: ₹125000</p><button onclick="bookAlert('Machu Picchu')">Book This Tour</button></div>
+        <div class="package"><h3>Serengeti Safari (6 Days)</h3><p>Witness the Great Migration in Tanzania.</p><p>Price: ₹210000</p><button onclick="bookAlert('Serengeti')">Book This Tour</button></div>
+        <div class="package"><h3>Paris Romance (3 Days)</h3><p>Experience the iconic sights and gourmet food of Paris.</p><p>Price: ₹75000</p><button onclick="bookAlert('Paris')">Book This Tour</button></div>
+        
+    </div>
+
+    <script>
+        function bookAlert(destination) {
+            alert('You selected the ' + destination + ' package! Please proceed to the Book Now page to finalize your booking.');
+            // In a real app, this would navigate to the booking page or open a modal
+        }
+    </script>
+
+</body>
+</html>
